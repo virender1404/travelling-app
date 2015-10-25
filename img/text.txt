@@ -1,0 +1,4 @@
+insert images with name 
+1 - warm;
+2 - snow;
+3 - simple;
