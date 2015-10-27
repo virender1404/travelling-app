@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('pass.php');
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -9,8 +10,9 @@ if ($conn->connect_error) {
 
 $a = $_POST["chat"];
 
-$sql = "INSERT INTO chat (msg)
-VALUES ('$a');";
+$b=$_SESSION["user"];
+$sql = "INSERT INTO chat (msg,name)
+VALUES ('$a','$b');";
 
 
 if ($conn->multi_query($sql) === TRUE) {
