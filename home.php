@@ -67,7 +67,15 @@ place:<br>
 </form>
 <br>
 <br>
-<a href="next.php">Wanna Chat</a>
+<form action="sess.php" method="post">
+
+name:<br>
+<input type="text" name="name">
+
+<input class="btn btn-primary" type="submit" value="wanna chat">
+</form>
+
+
 </center>
 </div>
 
